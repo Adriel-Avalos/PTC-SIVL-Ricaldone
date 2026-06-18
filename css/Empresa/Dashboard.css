@@ -1,0 +1,758 @@
+:root{
+
+    --nav-dark:#071325;
+    --primary-color:#2563EB;
+    --text-light:#9CA3AF;
+    --white:#FFFFFF;
+    --background:#F3F4F6;
+}
+
+body{
+
+    background:var(--background);
+}
+
+/* NAVBAR */
+
+.contenedor-navbar{
+
+    padding:20px 30px;
+}
+
+.barra-navegacion{
+
+    background-color:var(--nav-dark);
+
+    border-radius:22px;
+
+    min-height:75px;
+
+    padding:0.8rem 2rem;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
+}
+
+.logo-navbar{
+
+    display:flex;
+
+    align-items:center;
+
+    text-decoration:none;
+}
+
+.imagen-logo{
+
+    width:220px;
+}
+
+
+
+.lista-menu{
+
+    gap:10px;
+}
+
+.enlace-menu{
+
+    color:var(--text-light) !important;
+
+    font-weight:500;
+
+    padding:10px 18px !important;
+
+    border-radius:15px;
+
+    transition:.3s;
+}
+
+.enlace-menu:hover{
+
+    color:white !important;
+
+    background:rgba(255,255,255,.05);
+}
+
+.enlace-activo{
+
+    background:var(--primary-color);
+
+    color:white !important;
+}
+
+.boton-menu{
+
+    border:none;
+}
+
+.boton-menu:focus{
+
+    box-shadow:none;
+}
+
+/* PERFIL */
+
+.tarjeta-perfil{
+
+    width:90%;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.encabezado-perfil{
+
+    background:#D1D5DB;
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-end;
+}
+
+.imagen-perfil{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid white;
+
+    transform:translateY(60px);
+}
+
+.contenido-perfil{
+
+    text-align:center;
+
+    padding-top:80px;
+
+    padding-bottom:20px;
+
+    padding-left:20px;
+
+    padding-right:20px;
+}
+
+.titulo-perfil{
+
+    font-weight:600;
+
+    margin-bottom:5px;
+}
+
+.subtitulo-perfil{
+
+    color:#6B7280;
+
+    margin-bottom:20px;
+}
+
+.boton-perfil{
+
+    width:100%;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.boton-perfil:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+}
+
+/*    ACCIONES RAPIDAS */
+
+.separacion-superior{
+
+    margin-top:20px;
+}
+
+.tarjeta-acciones{
+
+    width:90%;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.titulo-acciones{
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+}
+
+.item-accion{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    text-decoration:none;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    margin-bottom:10px;
+
+    transition:.3s;
+}
+
+.item-accion:hover{
+
+    background:#EEF4FF;
+
+    transform:translateX(5px);
+}
+
+.icono-accion{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:15px;
+
+    background:#EEF4FF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+}
+
+.icono-accion i{
+
+    font-size:1.6rem;
+
+    color:#2563EB;
+}
+
+.contenido-accion h6{
+
+    margin:0;
+
+    font-weight:600;
+
+    color:#111827;
+}
+
+.contenido-accion p{
+
+    margin:0;
+
+    font-size:.85rem;
+
+    color:#6B7280;
+}
+
+/* CONTENIDO DASHBOARD */
+
+.contenido-dashboard{
+
+    padding-left:0px;
+}
+
+/*  MENSAJE DE BIENVENIDA*/
+.mensaje-bienvenida{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.titulo-bienvenida{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:#111827;
+
+    margin-bottom:10px;
+}
+
+.texto-bienvenida{
+
+    color:#6B7280;
+
+    font-size:1rem;
+
+    margin:0;
+}
+
+/* 
+ RESUMEN EMPRESA
+*/
+
+.titulo-resumen{
+
+    font-size:1.4rem;
+
+    font-weight:700;
+
+    color:#111827;
+
+    margin-bottom:20px;
+}
+
+/* 
+  TARJETAS
+*/
+
+.numero-resumen{
+
+    margin:0;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    line-height:1;
+}
+
+.texto-resumen{
+
+    margin:5px 0 0;
+
+    color:#6B7280;
+
+    font-size:.9rem;
+}
+
+.enlace-resumen{
+
+    display:block;
+
+    text-align:right;
+
+    text-decoration:none;
+
+    color:#2563EB;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    margin-top:12px;
+}
+
+.enlace-resumen:hover{
+
+    color:#1D4ED8;
+}
+
+.tarjeta-resumen{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    height:100%;
+}
+
+.tarjeta-resumen:hover{
+
+    transform:translateY(-4px);
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    height:100%;
+}
+
+
+
+.fila-superior-resumen{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+}
+
+.informacion-resumen{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.numero-resumen{
+
+    margin:0;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:#111827;
+
+    line-height:1;
+}
+
+.texto-resumen{
+
+    margin-top:5px;
+
+    margin-bottom:0;
+
+    color:#6B7280;
+
+    font-size:.9rem;
+}
+
+.enlace-resumen{
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:15px;
+
+    color:#2563EB;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    font-size:.9rem;
+}
+
+.icono-resumen{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+}
+
+.icono-resumen i{
+
+    font-size:1.8rem;
+}
+
+/* COLORES */
+
+.icono-vacantes{
+
+    background:#DBEAFE;
+}
+
+.icono-vacantes i{
+
+    color:#2563EB;
+}
+
+.icono-postulaciones{
+
+    background:#F3E8FF;
+}
+
+.icono-postulaciones i{
+
+    color:#9333EA;
+}
+
+.icono-pasantes{
+
+    background:#DCFCE7;
+}
+
+.icono-pasantes i{
+
+    color:#16A34A;
+}
+
+.icono-horas{
+
+    background:#FEF3C7;
+}
+
+.icono-horas i{
+
+    color:#D97706;
+}
+
+.seccion-postulaciones{
+
+    margin-top:10px;
+}
+
+.tarjeta-postulaciones{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+/* Encabezado*/
+.encabezado-postulaciones{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+.titulo-postulaciones{
+
+    margin:0;
+
+    font-size:1.3rem;
+
+    font-weight:700;
+}
+
+.subtitulo-postulaciones{
+
+    margin:0;
+
+    color:#6B7280;
+
+    font-size:.9rem;
+}
+
+.enlace-ver-todas{
+
+    color:#2563EB;
+
+    text-decoration:none;
+
+    font-weight:600;
+}
+
+.item-postulacion{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #E5E7EB;
+}
+
+.item-postulacion:last-child{
+
+    border-bottom:none;
+}
+
+.foto-postulante{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-right:15px;
+}
+
+.info-postulante{
+
+    flex:1;
+}
+
+.info-postulante h6{
+
+    margin:0;
+
+    font-weight:600;
+}
+
+.info-postulante p{
+
+    margin:2px 0;
+
+    color:#6B7280;
+}
+
+.info-postulante span{
+
+    font-size:.85rem;
+
+    color:#9CA3AF;
+}
+
+.btn-ver-perfil{
+
+    border:none;
+
+    background:#EEF4FF;
+
+    color:#2563EB;
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn-ver-perfil:hover{
+
+    background:#DBEAFE;
+}
+
+.estado-postulacion{
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+    display:inline-block;
+
+    margin-bottom:10px;
+}
+
+.estado-nuevo{
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+}
+
+.estado-revision{
+
+    background:#FEF3C7;
+
+    color:#D97706;
+}
+
+.estado-aceptada{
+
+    background:#DCFCE7;
+
+    color:#16A34A;
+}
+
+.estado-rechazada{
+
+    background:#FEE2E2;
+
+    color:#DC2626;
+}
+
+.acciones-postulacion{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+}
+
+.detalle-postulacion{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:5px;
+}
+
+.fecha-postulacion{
+
+    font-size:.85rem;
+
+    color:#9CA3AF;
+}
+
+.estado-postulacion{
+
+    padding:4px 10px;
+
+    border-radius:20px;
+
+    font-size:.75rem;
+
+    font-weight:600;
+}

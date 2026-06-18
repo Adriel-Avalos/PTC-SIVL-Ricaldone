@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard Empresa</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/Empresa/Dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="contenedor-navbar">
+
+        <nav class="navbar navbar-expand-lg barra-navegacion">
+
+            <div class="container-fluid">
+
+                <!-- LOGO -->
+
+               <a class="logo-navbar" href="#">
+
+    <img src="img/logo-ricaldone.png"
+         alt="Logo SIVL"
+         class="imagen-logo">
+
+</a>
+
+                <!-- BOTON RESPONSIVE -->
+
+                <button class="navbar-toggler boton-menu"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarEmpresa">
+
+                    <i class="bi bi-list fs-2 text-white"></i>
+
+                </button>
+
+                <!-- MENU -->
+
+                <div class="collapse navbar-collapse justify-content-center"
+                     id="navbarEmpresa">
+
+                    <ul class="navbar-nav lista-menu">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link enlace-menu enlace-activo"
+                               href="#">
+
+                                <i class="bi bi-house-door me-1"></i>
+
+                                Dashboard
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link enlace-menu"
+                               href="#">
+
+                                <i class="bi bi-briefcase me-1"></i>
+
+                                Vacantes
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link enlace-menu"
+                               href="#">
+
+                                <i class="bi bi-mortarboard me-1"></i>
+
+                                Pasantías
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link enlace-menu"
+                               href="#">
+
+                                <i class="bi bi-file-earmark-text me-1"></i>
+
+                                Postulaciones
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link enlace-menu"
+                               href="#">
+
+                                <i class="bi bi-people me-1"></i>
+
+                                Pasantes
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- CONTENIDO -->
+
+    <main class="container-fluid">
+
+        <div class="row px-4">
+
+            <!-- COLUMNA IZQUIERDA -->
+
+            <aside class="col-lg-3">
+
+                <!-- PERFIL -->
+
+                <article class="tarjeta-perfil">
+
+                    <div class="encabezado-perfil">
+
+                        <img src="img/image-removebg-preview.png"
+                             alt="Empresa"
+                             class="imagen-perfil">
+
+                    </div>
+
+                    <div class="contenido-perfil">
+
+                        <h5 class="titulo-perfil">
+
+                            Empresa
+
+                        </h5>
+
+                        <p class="subtitulo-perfil">
+
+                            TechSolutions S.A.
+
+                        </p>
+
+                        <button class="boton-perfil">
+
+                            Ver mi perfil
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- ACCIONES RAPIDAS -->
+
+                <article class="tarjeta-acciones separacion-superior">
+
+                    <h5 class="titulo-acciones">
+
+                        Acciones rápidas
+
+                    </h5>
+
+                    <a href="#"
+                       class="item-accion">
+
+                        <div class="icono-accion">
+
+                            <i class="bi bi-plus-circle-fill"></i>
+
+                        </div>
+
+                        <div class="contenido-accion">
+
+                            <h6>Crear vacante</h6>
+
+                            <p>Publica nuevas oportunidades laborales.</p>
+
+                        </div>
+
+                    </a>
+
+                    <a href="#"
+                       class="item-accion">
+
+                        <div class="icono-accion">
+
+                            <i class="bi bi-mortarboard-fill"></i>
+
+                        </div>
+
+                        <div class="contenido-accion">
+
+                            <h6>Crear pasantía</h6>
+
+                            <p>Ofrece prácticas profesionales.</p>
+
+                        </div>
+
+                    </a>
+
+                    <a href="#"
+                       class="item-accion">
+
+                        <div class="icono-accion">
+
+                            <i class="bi bi-people-fill"></i>
+
+                        </div>
+
+                        <div class="contenido-accion">
+
+                            <h6>Gestionar pasantes</h6>
+
+                            <p>Administra estudiantes asignados.</p>
+
+                        </div>
+
+                    </a>
+
+                    <a href="#"
+                       class="item-accion">
+
+                        <div class="icono-accion">
+
+                            <i class="bi bi-file-earmark-text-fill"></i>
+
+                        </div>
+
+                        <div class="contenido-accion">
+
+                            <h6>Postulaciones</h6>
+
+                            <p>Revisa solicitudes recibidas.</p>
+
+                        </div>
+
+                    </a>
+
+                </article>
+
+            </aside>
+
+            <!-- CONTENIDO PRINCIPAL -->
+
+            <section class="col-lg-9">
+
+               <div class="contenido-dashboard">
+
+    <!-- MENSAJE DE INICIO -->
+
+    <section class="mensaje-bienvenida">
+
+        <h1 class="titulo-bienvenida">
+
+            ¡Bienvenido, TechSolutions!
+
+        </h1>
+
+        <p class="texto-bienvenida">
+
+            Gestiona vacantes, pasantías, postulaciones y el seguimiento de tus pasantes desde un solo lugar.
+
+        </p>
+
+    </section>
+
+    <!-- RESUMEN -->
+
+    <section class="resumen-empresa">
+
+        <h3 class="titulo-resumen">
+
+            Resumen de tu empresa
+
+        </h3>
+
+      <div class="row">
+
+    <!-- VACANTES -->
+
+    <div class="col-md-6 col-xl-3 mb-4">
+
+        <article class="tarjeta-resumen">
+
+            <div class="fila-superior-resumen">
+
+                <div class="icono-resumen icono-vacantes">
+
+                    <i class="bi bi-briefcase-fill"></i>
+
+                </div>
+
+                <div class="informacion-resumen">
+
+                    <h2 class="numero-resumen">
+                        12
+                    </h2>
+
+                    <p class="texto-resumen">
+                        Vacantes activas
+                    </p>
+
+                </div>
+
+            </div>
+
+            <a href="#" class="enlace-resumen">
+                Ver todas
+            </a>
+
+        </article>
+
+    </div>
+
+    <!-- POSTULACIONES -->
+
+    <div class="col-md-6 col-xl-3 mb-4">
+
+        <article class="tarjeta-resumen">
+
+            <div class="fila-superior-resumen">
+
+                <div class="icono-resumen icono-postulaciones">
+
+                    <i class="bi bi-file-earmark-text-fill"></i>
+
+                </div>
+
+                <div class="informacion-resumen">
+
+                    <h2 class="numero-resumen">
+                        48
+                    </h2>
+
+                    <p class="texto-resumen">
+                        Postulaciones recibidas
+                    </p>
+
+                </div>
+
+            </div>
+
+            <a href="#" class="enlace-resumen">
+                Ver todas
+            </a>
+
+        </article>
+
+    </div>
+
+    <!-- PASANTES -->
+
+    <div class="col-md-6 col-xl-3 mb-4">
+
+        <article class="tarjeta-resumen">
+
+            <div class="fila-superior-resumen">
+
+                <div class="icono-resumen icono-pasantes">
+
+                    <i class="bi bi-people-fill"></i>
+
+                </div>
+
+                <div class="informacion-resumen">
+
+                    <h2 class="numero-resumen">
+                        25
+                    </h2>
+
+                    <p class="texto-resumen">
+                        Pasantes activos
+                    </p>
+
+                </div>
+
+            </div>
+
+            <a href="#" class="enlace-resumen">
+                Ver todos
+            </a>
+
+        </article>
+
+    </div>
+
+    <!-- HORAS -->
+
+    <div class="col-md-6 col-xl-3 mb-4">
+
+        <article class="tarjeta-resumen">
+
+            <div class="fila-superior-resumen">
+
+                <div class="icono-resumen icono-horas">
+
+                    <i class="bi bi-clock-history"></i>
+
+                </div>
+
+                <div class="informacion-resumen">
+
+                    <h2 class="numero-resumen">
+                        860
+                    </h2>
+
+                    <p class="texto-resumen">
+                        Horas registradas
+                    </p>
+
+                </div>
+
+            </div>
+
+            <a href="#" class="enlace-resumen">
+                Ver detalles
+            </a>
+
+             </article>
+
+              </div>
+
+         </div>
+
+       
+
+<section class="seccion-postulaciones">
+
+    <article class="tarjeta-postulaciones">
+
+        <!-- ENCABEZADO -->
+
+        <div class="encabezado-postulaciones">
+
+            <div>
+
+                <h3 class="titulo-postulaciones">
+
+                    Últimas postulaciones
+
+                </h3>
+
+                <p class="subtitulo-postulaciones">
+
+                    Solicitudes recibidas recientemente
+
+                </p>
+
+            </div>
+
+            <a href="#"
+               id="btnVerTodasPostulaciones"
+               class="enlace-ver-todas">
+
+                Ver todas
+
+            </a>
+
+        </div>
+
+        <!-- LISTA DE POSTULACIONES -->
+
+        <div id="listaPostulaciones">
+
+            <!-- POSTULACION 1 -->
+
+            <div class="item-postulacion"
+                 id="postulacion1">
+
+                <img src="img/usuario.png"
+                     alt="Estudiante"
+                     class="foto-postulante">
+
+                <div class="info-postulante">
+
+                    <h6 id="nombrePostulante1">
+
+                        Juan Pérez
+
+                    </h6>
+
+                    <p id="vacantePostulante1">
+
+                        Desarrollo Web
+
+                    </p>
+
+                    <span id="fechaPostulacion1">
+
+                        Hace 2 horas
+
+                    </span>
+
+                </div>
+
+                <div class="acciones-postulacion">
+
+                    <span id="estadoPostulacion1"
+                          class="estado-postulacion estado-nuevo">
+
+                        Nuevo
+
+                    </span>
+
+                    <button id="btnPerfilPostulante1"
+                            class="btn-ver-perfil">
+
+                        Ver perfil
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- POSTULACION 2 -->
+
+            <div class="item-postulacion"
+                 id="postulacion2">
+
+                <img src="img/usuario.png"
+                     alt="Estudiante"
+                     class="foto-postulante">
+
+                <div class="info-postulante">
+
+                    <h6 id="nombrePostulante2">
+
+                        María López
+
+                    </h6>
+
+                    <p id="vacantePostulante2">
+
+                        Diseño UX/UI
+
+                    </p>
+
+                    <span id="fechaPostulacion2">
+
+                        Hace 5 horas
+
+                    </span>
+
+                </div>
+
+                <div class="acciones-postulacion">
+
+                    <span id="estadoPostulacion2"
+                          class="estado-postulacion estado-revision">
+
+                        En revisión
+
+                    </span>
+
+                    <button id="btnPerfilPostulante2"
+                            class="btn-ver-perfil">
+
+                        Ver perfil
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- POSTULACION 3 -->
+
+            <div class="item-postulacion"
+                 id="postulacion3">
+
+                <img src="img/usuario.png"
+                     alt="Estudiante"
+                     class="foto-postulante">
+
+                <div class="info-postulante">
+
+                    <h6 id="nombrePostulante3">
+
+                        Carlos Ruiz
+
+                    </h6>
+
+                    <p id="vacantePostulante3">
+
+                        Soporte Técnico
+
+                    </p>
+
+                    <span id="fechaPostulacion3">
+
+                        Hace 1 día
+
+                    </span>
+
+                </div>
+
+                <div class="acciones-postulacion">
+
+                    <span id="estadoPostulacion3"
+                          class="estado-postulacion estado-aceptada">
+
+                        Aceptada
+
+                    </span>
+
+                    <button id="btnPerfilPostulante3"
+                            class="btn-ver-perfil">
+
+                        Ver perfil
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</section>
+        
+ </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
