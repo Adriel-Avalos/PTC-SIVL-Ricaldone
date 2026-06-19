@@ -64,6 +64,8 @@ body{
     border-radius:15px;
 
     transition:.3s;
+
+    margin: 0 12px;
 }
 
 .enlace-menu:hover{
@@ -603,11 +605,11 @@ body{
 
     align-items:center;
 
-    justify-content:space-between;
-
-    padding:15px 0;
+    padding:18px 0;
 
     border-bottom:1px solid #E5E7EB;
+
+    gap:20px;
 }
 
 .item-postulacion:last-child{
@@ -656,29 +658,31 @@ body{
 
 .btn-ver-perfil{
 
+    min-width:110px;
+
     border:none;
 
     background:#EEF4FF;
 
     color:#2563EB;
 
-    padding:10px 18px;
+    padding:10px 16px;
 
     border-radius:12px;
 
     font-weight:600;
 
-    transition:.3s;
+    white-space:nowrap;
 }
 
-.btn-ver-perfil:hover{
-
-    background:#DBEAFE;
-}
 
 .estado-postulacion{
 
-    padding:6px 12px;
+    min-width:110px;
+
+    text-align:center;
+
+    padding:10px 20px;
 
     border-radius:20px;
 
@@ -686,9 +690,7 @@ body{
 
     font-weight:600;
 
-    display:inline-block;
-
-    margin-bottom:10px;
+    white-space:nowrap;
 }
 
 .estado-nuevo{
@@ -755,4 +757,132 @@ body{
     font-size:.75rem;
 
     font-weight:600;
+}
+
+.tarjeta-pasantes{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+    margin-top:20px;
+}
+
+.encabezado-pasantes{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+.titulo-pasantes{
+
+    margin:0;
+
+    font-size:1.3rem;
+
+    font-weight:700;
+}
+
+.subtitulo-pasantes{
+
+    margin:0;
+
+    color:#6B7280;
+
+    font-size:.9rem;
+}
+
+.tabla-pasantes{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+.tabla-pasantes th{
+
+    text-align:left;
+
+    padding:15px;
+
+    font-size:.9rem;
+
+    color:#6B7280;
+
+    border-bottom:2px solid #E5E7EB;
+}
+
+.tabla-pasantes td{
+
+    padding:18px 15px;
+
+    border-bottom:1px solid #E5E7EB;
+}
+
+.tabla-pasantes tbody tr:last-child td{
+
+    border-bottom:none;
+}
+
+.estado-pasante{
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:.8rem;
+
+    font-weight:600;
+}
+
+.estado-activo{
+
+    background:#DCFCE7;
+
+    color:#16A34A;
+}
+
+.estado-finalizado{
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+}
+
+.estado-pausado{
+
+    background:#FEF3C7;
+
+    color:#D97706;
+}
+
+.btn-tabla{
+
+    border:none;
+
+    background:#EEF4FF;
+
+    color:#2563EB;
+
+    padding:8px 14px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn-tabla:hover{
+
+    background:#DBEAFE;
 }
