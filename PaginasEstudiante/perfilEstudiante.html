@@ -26,7 +26,7 @@
                 <li class="nav-item"><a class="nav-link enlace-nav py-2 px-3" href="./postulacionesEstudiante.html"><i class="bi bi-file-earmark-text me-1"></i> Postulaciones</a></li>
                 <li class="nav-item"><a class="nav-link enlace-nav py-2 px-3" href="./ofertasGuardadas.html"><i class="bi bi-bookmark me-1"></i> Postulaciones Guardadas</a></li>
                 <li class="nav-item"><a class="nav-link enlace-nav py-2 px-3" href="./asignacionesEstudiante.html"><i class="bi bi-check2-square me-1"></i> Asignaciones</a></li>
-                <li class="nav-item"><a class="nav-link enlace-nav py-2 px-3" href="./noti.html"><i class="bi bi-bell me-1"></i> Notificaciones <span class="badge bg-primary rounded-pill ms-1">3</span></a></li>
+                <li class="nav-item"><a class="nav-link enlace-nav py-2 px-3" href="./noti.html"><i class="bi bi-bell me-1"></i> Notificaciones <span id="navCantidadNotificaciones" class="badge bg-primary rounded-pill ms-1">3</span></a></li>
             </ul>
         </div>
     </div>
@@ -38,7 +38,7 @@
         <div class="col-lg-8 mb-4">
             
             <div class="card tarjeta-personalizada position-relative mb-4">
-                <button class="btn-editar-perfil"><i class="bi bi-pencil-fill me-2"></i>Editar perfil</button>
+                <button  id="perfilEditar" class="btn-editar-perfil"><i class="bi bi-pencil-fill me-2"></i>Editar perfil</button>
                 
                 <div class="portada-perfil">
                     <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
@@ -48,39 +48,39 @@
 
                 <div class="px-4 pb-4">
                     <div class="contenedor-avatar-perfil mb-3">
-                        <div class="avatar-perfil rounded-circle d-flex align-items-center justify-content-center">
+                        <div id="perfilFoto" class="avatar-perfil rounded-circle d-flex align-items-center justify-content-center">
                             <i class="bi bi-person-fill text-white" style="font-size: 5rem;"></i>
                         </div>
-                        <div class="insignia-editar-avatar rounded-circle d-flex align-items-center justify-content-center"><i class="bi bi-pencil text-muted" style="font-size: 0.75rem;"></i></div>
+                        <div id="perfilEditarFoto" class="insignia-editar-avatar rounded-circle d-flex align-items-center justify-content-center"><i class="bi bi-pencil text-muted" style="font-size: 0.75rem;"></i></div>
                     </div>
 
-                    <h4 class="fw-bold mb-0">Usuario</h4>
-                    <p class="text-muted fw-bold small mb-1">Development de Software</p>
+                    <h4 id="perfilNombre" class="fw-bold mb-0">Usuario</h4>
+                    <p id="perfilEspecialidad" class="text-muted fw-bold small mb-1">Development de Software</p>
                     <div class="d-flex align-items-center mb-3">
-                        <span class="text-muted small me-3"><i class="bi bi-geo-alt me-1"></i> La Paz, El Salvador</span>
-                        <span class="fw-bold" style="color: #10b981; font-size: 0.85rem;"><i class="bi bi-circle-fill me-1" style="font-size: 0.5rem;"></i> Disponible para oportunidades</span>
+                        <span id="perfilUbicacion" class="text-muted small me-3"><i class="bi bi-geo-alt me-1"></i> La Paz, El Salvador</span>
+                        <span id="perfilDisponibilidad" class="fw-bold" style="color: #10b981; font-size: 0.85rem;"><i class="bi bi-circle-fill me-1" style="font-size: 0.5rem;"></i> Disponible para oportunidades</span>
                     </div>
 
-                    <p class="text-muted" style="font-size: 0.9rem; max-width: 85%;">
+                    <p id="perfilDescripcion" class="text-muted" style="font-size: 0.9rem; max-width: 85%;">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore maxime dolores voluptates consequatur laudantium delectus cum, fuga aperiam, quidem sed voluptas quas perferendis illo vitae culpa, mollitia tempore dsadss
                     </p>
 
                     <div class="bg-light rounded-3 p-3 d-flex justify-content-between mb-4">
                         <div class="d-flex flex-column" style="font-size: 0.8rem;">
                             <span class="text-secondary fw-semibold mb-1" style="color: #9ca3af !important;">Especialidad</span>
-                            <span class="fw-semibold text-secondary" style="color: #4b5563 !important;">Desarrollo de Software</span>
+                            <span id="perfilEspecialidadInfo" class="fw-semibold text-secondary" style="color: #4b5563 !important;">Desarrollo de Software</span>
                         </div>
                         <div class="d-flex flex-column" style="font-size: 0.8rem;">
                             <span class="text-secondary fw-semibold mb-1" style="color: #9ca3af !important;">Sección</span>
-                            <span class="fw-semibold text-secondary" style="color: #4b5563 !important;">B1</span>
+                            <span id="perfilSeccion" class="fw-semibold text-secondary" style="color: #4b5563 !important;">B1</span>
                         </div>
                         <div class="d-flex flex-column" style="font-size: 0.8rem;">
                             <span class="text-secondary fw-semibold mb-1" style="color: #9ca3af !important;">Correo</span>
-                            <span class="fw-semibold valor-info-perfil"><a href="mailto:CorreoDePractica@gmail.com">CorreoDePractica@gmail.com</a></span>
+                            <span id="perfilCorreo" class="fw-semibold valor-info-perfil"><a href="mailto:CorreoDePractica@gmail.com">CorreoDePractica@gmail.com</a></span>
                         </div>
                         <div class="d-flex flex-column" style="font-size: 0.8rem;">
                             <span class="text-secondary fw-semibold mb-1" style="color: #9ca3af !important;">Teléfono</span>
-                            <span class="fw-semibold text-secondary" style="color: #4b5563 !important;">+503 7733 2365</span>
+                            <span id="perfilTelefono" class="fw-semibold text-secondary" style="color: #4b5563 !important;">+503 7733 2365</span>
                         </div>
                     </div>
 
@@ -88,21 +88,21 @@
                         <div class="d-flex align-items-center">
                             <div class="icono-estadistica bg-primary rounded-circle d-flex align-items-center justify-content-center text-white fs-5 me-3"><i class="bi bi-briefcase-fill"></i></div>
                             <div>
-                                <div class="fw-bold fs-5 lh-1">12</div>
+                                <div id="perfilPostulaciones" class="fw-bold fs-5 lh-1">12</div>
                                 <div class="text-muted small fw-bold">Postulaciones</div>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
                             <div class="icono-estadistica bg-success rounded-circle d-flex align-items-center justify-content-center text-white fs-5 me-3"><i class="bi bi-folder-fill"></i></div>
                             <div>
-                                <div class="fw-bold fs-5 lh-1">3</div>
+                                <div id="perfilProyectos" class="fw-bold fs-5 lh-1">3</div>
                                 <div class="text-muted small fw-bold">Proyectos</div>
                             </div>
                         </div>
                         <div class="d-flex align-items-center me-5">
                             <div class="icono-estadistica bg-purple rounded-circle d-flex align-items-center justify-content-center text-white fs-5 me-3" style="background-color: #8b5cf6 !important;"><i class="bi bi-code-slash"></i></div>
                             <div>
-                                <div class="fw-bold fs-5 lh-1">5</div>
+                                <div id="perfilHabilidades" class="fw-bold fs-5 lh-1">5</div>
                                 <div class="text-muted small fw-bold">Habilidades</div>
                             </div>
                         </div>
@@ -112,10 +112,10 @@
 
             <div class="d-flex justify-content-between align-items-center mb-3 px-2">
                 <h5 class="fw-bold mb-0">Portafolio</h5>
-                <a href="#" class="text-decoration-none fw-bold" style="color: var(--azul-primario);"><i class="bi bi-plus-lg me-1"></i> Agregar proyecto</a>
+                <a id="perfilAgregarProyecto" href="#" class="text-decoration-none fw-bold" style="color: var(--azul-primario);"><i class="bi bi-plus-lg me-1"></i> Agregar proyecto</a>
             </div>
 
-            <div class="row g-3">
+            <div id="perfilPortafolio" class="row g-3">
                 <div class="col-md-4">
                     <div class="card tarjeta-personalizada h-100 p-0 border-0">
                         <div class="imagen-portafolio"></div>
@@ -156,9 +156,9 @@
                 <h6 class="fw-bold mb-4">Completa tu perfil</h6>
                 <div class="d-flex align-items-center">
                     
-                    <div class="circulo-progreso rounded-circle d-flex align-items-center justify-content-center me-4" style="background: conic-gradient(var(--azul-primario) 75%, #e5e7eb 0);">
+                    <div id="perfilCirculoProgreso" class="circulo-progreso rounded-circle d-flex align-items-center justify-content-center me-4" style="background: conic-gradient(var(--azul-primario) 75%, #e5e7eb 0);">
                         <div class="circulo-progreso-interno rounded-circle d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="fw-bold mb-0 lh-1">75%</h4>
+                            <h4 id = "perfilPorcentaje" class="fw-bold mb-0 lh-1">75%</h4>
                             <span class="text-muted" style="font-size: 0.65rem;">completado</span>
                         </div>
                     </div>
@@ -166,19 +166,19 @@
                     <div class="flex-grow-1">
                         <div class="d-flex align-items-center justify-content-between mb-2 text-secondary" style="font-size: 0.85rem; color: #4b5563 !important;">
                             <div><i class="bi bi-dash text-secondary me-1"></i> Foto de perfil</div>
-                            <i class="bi bi-check-circle-fill text-success fs-6"></i>
+                            <i id="checkFoto" class="bi bi-check-circle-fill text-success fs-6"></i>
                         </div>
                         <div class="d-flex align-items-center justify-content-between mb-2 text-secondary" style="font-size: 0.85rem; color: #4b5563 !important;">
                             <div><i class="bi bi-dash text-secondary me-1"></i> Información personal</div>
-                            <i class="bi bi-check-circle-fill text-success fs-6"></i>
+                            <i id="checkInfo"  class="bi bi-check-circle-fill text-success fs-6"></i>
                         </div>
                         <div class="d-flex align-items-center justify-content-between mb-2 text-secondary" style="font-size: 0.85rem; color: #4b5563 !important;">
                             <div><i class="bi bi-dash text-secondary me-1"></i> Habilidades</div>
-                            <i class="bi bi-check-circle-fill text-success fs-6"></i>
+                            <i id="checkHabilidades" class="bi bi-check-circle-fill text-success fs-6"></i>
                         </div>
                         <div class="d-flex align-items-center justify-content-between mb-0 text-secondary" style="font-size: 0.85rem; color: #4b5563 !important;">
                             <div><i class="bi bi-dash text-secondary me-1"></i> Portafolio</div>
-                            <i class="bi bi-x-circle-fill" style="color: #fc8181; font-size: 1.1rem;"></i>
+                            <i id="checkPortafolio"  class="bi bi-x-circle-fill" style="color: #fc8181; font-size: 1.1rem;"></i>
                         </div>
                     </div>
                 </div>
@@ -188,15 +188,15 @@
                 <h6 class="fw-bold mb-4">Horas Sociales</h6>
                 <div class="d-flex align-items-center">
                     
-                    <div class="circulo-progreso rounded-circle d-flex align-items-center justify-content-center me-4" style="background: conic-gradient(var(--azul-primario) 50%, #e5e7eb 0);">
+                    <div id="perfilCirculoHoras" class="circulo-progreso rounded-circle d-flex align-items-center justify-content-center me-4" style="background: conic-gradient(var(--azul-primario) 50%, #e5e7eb 0);">
                         <div class="circulo-progreso-interno rounded-circle d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="fw-bold mb-0 lh-1">50%</h4>
+                            <h4 id="perfilPorcentajeHoras" class="fw-bold mb-0 lh-1">50%</h4>
                             <span class="text-muted" style="font-size: 0.65rem;">completado</span>
                         </div>
                     </div>
 
                     <div>
-                        <h4 class="fw-bold mb-0">100<span class="text-muted" style="font-size: 1.1rem;">/200 horas</span></h4>
+                        <h4 id="perfilHoras" class="fw-bold mb-0">100<span class="text-muted" style="font-size: 1.1rem;">/200 horas</span></h4>
                         <p class="text-muted fw-bold small mb-0">Horas completadas</p>
                     </div>
                     
@@ -210,5 +210,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+
+<script src="../JS/EstudiantesJS/perfilEstudiante.js"></script>
+
+<script src="../JS/global.js"></script>
 </body>
 </html>

@@ -26,7 +26,7 @@
                 <li class="nav-item"><a class="nav-link enlace-menu activo px-3 py-2" href="./postulacionesEstudiante.html"><i class="bi bi-file-earmark-text me-1"></i> Postulaciones</a></li>
                 <li class="nav-item"><a class="nav-link enlace-menu px-3 py-2" href="./ofertasGuardadas.html"><i class="bi bi-bookmark me-1"></i> Postulaciones Guardadas</a></li>
                 <li class="nav-item"><a class="nav-link enlace-menu px-3 py-2" href="./asignacionesEstudiante.html"><i class="bi bi-check2-square me-1"></i> Asignaciones</a></li>
-                <li class="nav-item"><a class="nav-link enlace-menu px-3 py-2" href="./noti.html"><i class="bi bi-bell me-1"></i> Notificaciones <span class="badge bg-primary rounded-pill ms-1">3</span></a></li>
+                <li class="nav-item"><a class="nav-link enlace-menu px-3 py-2" href="./noti.html"><i class="bi bi-bell me-1"></i> Notificaciones <span id="navCantidadNotificaciones" class="badge bg-primary rounded-pill ms-1">3</span></a></li>
             </ul>
         </div>
     </div>
@@ -40,19 +40,19 @@
             <div class="card tarjeta-blanca p-4 mb-3">
                 <div class="fila-estadistica mb-3" style="color: var(--pendiente);">
                     <div><span class="punto-color" style="background: var(--pendiente);"></span> Pendiente</div>
-                    <span class="text-dark">4</span>
+                    <span id="postPendientes" class="text-dark">4</span>
                 </div>
                 <div class="fila-estadistica mb-3" style="color: var(--revision);">
                     <div><span class="punto-color" style="background: var(--revision);"></span> En revisión</div>
-                    <span class="text-dark">3</span>
+                    <span id="postRevision" class="text-dark">3</span>
                 </div>
                 <div class="fila-estadistica mb-3" style="color: var(--aceptado);">
                     <div><span class="punto-color" style="background: var(--aceptado);"></span> Aceptado</div>
-                    <span class="text-dark">1</span>
+                    <span id="postAceptados" class="text-dark">1</span>
                 </div>
                 <div class="fila-estadistica mb-0" style="color: var(--rechazado);">
                     <div><span class="punto-color" style="background: var(--rechazado);"></span> Rechazado</div>
-                    <span class="text-dark">2</span>
+                    <span id="postRechazados" class="text-dark">2</span>
                 </div>
             </div>
 
@@ -62,7 +62,7 @@
                 <div class="d-flex justify-content-center my-3">
                     <div class="circulo-dona">
                         <div class="centro-blanco-dona d-flex flex-column align-items-center justify-content-center">
-                            <h2 class="fw-bold mb-0 lh-1">12</h2>
+                            <h2 id="postTotal" class="fw-bold mb-0 lh-1">12</h2>
                             <span class="text-muted" style="font-size: 0.7rem;">Total</span>
                         </div>
                     </div>
@@ -96,14 +96,14 @@
                     </div>
                     <div class="d-flex align-items-center">
                         <span class="text-muted small me-2 text-nowrap">Ordenar por:</span>
-                        <select class="form-select form-select-sm border-0 bg-transparent fw-bold shadow-none" style="cursor: pointer;">
+                        <select id="postOrden" class="form-select form-select-sm border-0 bg-transparent fw-bold shadow-none" style="cursor: pointer;">
                             <option selected>Más recientes</option>
                             <option value="1">Antiguos</option>
                         </select>
                     </div>
                 </div>
 
-                <div class="row g-3">
+                <div id="postContenedor" class="row g-3">
                     
                     <div class="col-md-3">
                         <div class="fondo-columna">
@@ -204,14 +204,14 @@
         <div class="col-lg-3 mb-4">
             
             <div class="card tarjeta-blanca p-4 text-center mb-4">
-                <div class="foto-perfil mb-3 mx-auto d-flex align-items-center justify-content-center">
+                <div id="postFoto" class="foto-perfil mb-3 mx-auto d-flex align-items-center justify-content-center">
                     <i class="bi bi-person-fill text-white" style="font-size: 3.5rem;"></i>
                 </div>
-                <h5 class="fw-bold mb-0">Usuario</h5>
-                <p class="text-muted small mb-0 fw-bold mt-1">Desarrollo de Software</p>
-                <p class="text-muted small mb-2">Segundo año</p>
+                <h5  class="fw-bold mb-0" id="postNombre">Usuario</h5>
+                <p class="text-muted small mb-0 fw-bold mt-1" id="postEspecialidad">Desarrollo de Software</p>
+                <p class="text-muted small mb-2" id="postAnio">Segundo año</p>
                 <div class="mb-3">
-                    <span class="punto-activo-perfil"></span><span class="fw-bold" style="color: #10b981; font-size: 0.8rem;">Disponible para oportunidades</span>
+                    <span class="punto-activo-perfil"></span><span class="fw-bold" style="color: #10b981; font-size: 0.8rem;" id="postDisponibilidad">Disponible para oportunidades</span>
                 </div>
                 <a href="./perfilEstudiante.html" class="btn btn-primary w-100 rounded-pill border-0 py-2 fw-bold" style="background-color: var(--azul-principal);"> Ver mi perfil</a>
             </div>
@@ -250,5 +250,8 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+<script src="../JS/EstudiantesJS/postulaciones.js"></script>
+
+<script src="../JS/global.js"></script>
 </body>
 </html>

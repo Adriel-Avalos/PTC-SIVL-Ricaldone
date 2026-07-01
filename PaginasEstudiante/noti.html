@@ -32,7 +32,7 @@
                 <li class="nav-item"><a class="nav-link" href="./ofertasGuardadas.html"><i class="bi bi-bookmark me-1"></i> Postulaciones Guardadas</a></li>
                 <li class="nav-item"><a class="nav-link" href="./asignacionesEstudiante.html"><i class="bi bi-check2-square me-1"></i> Asignaciones</a></li>
                 <!-- Enlace Activo: Notificaciones -->
-                <li class="nav-item"><a class="nav-link nav-activo" href="./noti.html"><i class="bi bi-bell me-1"></i> Notificaciones <span class="badge bg-primary rounded-pill ms-1">5</span></a></li>
+                <li class="nav-item"><a class="nav-link nav-activo" href="./noti.html"><i class="bi bi-bell me-1"></i> Notificaciones <span id="navCantidadNotificaciones" class="badge bg-primary rounded-pill ms-1">5</span></a></li>
             </ul>
         </div>       
     </div>
@@ -50,23 +50,23 @@
                     <h6 class="fw-bold mb-0">Filtros</h6>
                     <i class="bi bi-sliders text-muted"></i>
                 </div>
-                <a href="#" class="item-filtro activo">
+                <a id="notiTodas" href="#" class="item-filtro activo">
                     <div><i class="bi bi-inbox icono-filtro text-primary"></i> Todas</div>
                     <span class="fw-bold">13</span>
                 </a>
-                <a href="#" class="item-filtro">
+                <a id="notiSinLeer" href="#" class="item-filtro">
                     <div><i class="bi bi-chat-left icono-filtro"></i> Sin leer</div>
                     <span class="fw-bold">5</span>
                 </a>
-                <a href="#" class="item-filtro">
+                <a id="notiVacantes" href="#" class="item-filtro">
                     <div><i class="bi bi-briefcase icono-filtro text-success"></i> Vacantes</div>
                     <span class="fw-bold">6</span>
                 </a>
-                <a href="#" class="item-filtro">
+                <a id="notiPostulaciones" href="#" class="item-filtro">
                     <div><i class="bi bi-file-earmark-text icono-filtro" style="color: #8b5cf6;"></i> Postulaciones</div>
                     <span class="fw-bold">3</span>
                 </a>
-                <a href="#" class="item-filtro">
+                <a id="notiRecordatorios" href="#" class="item-filtro">
                     <div><i class="bi bi-clock-history icono-filtro text-warning"></i> Recordatorios</div>
                     <span class="fw-bold">2</span>
                 </a>
@@ -82,7 +82,7 @@
                         <div class="text-muted" style="font-size: 0.75rem; margin-left: 24px;">Activadas</div>
                     </div>
                     <div class="form-check form-switch m-0 p-0">
-                        <input class="form-check-input ms-0" type="checkbox" checked>
+                        <input id="notiPush" class="form-check-input ms-0" type="checkbox" checked>
                     </div>
                 </div>
 
@@ -92,7 +92,7 @@
                         <div class="text-muted" style="font-size: 0.75rem; margin-left: 24px;">Activadas</div>
                     </div>
                     <div class="form-check form-switch m-0 p-0">
-                        <input class="form-check-input ms-0" type="checkbox" checked>
+                        <input id="notiEmail" class="form-check-input ms-0" type="checkbox" checked>
                     </div>
                 </div>
 
@@ -109,14 +109,14 @@
 
         <!-- COLUMNA CENTRAL: Panel Principal de Notificaciones (Contenido Esencial) -->
         <main class="col-lg-6 col-xl-7 mb-4">
-            <div class="card tarjeta-personalizada p-4">
+            <div id="notiContenedor" class="card tarjeta-personalizada p-4">
                 <!-- Encabezado de la bandeja de entrada -->
                 <div class="d-flex justify-content-between align-items-end mb-4">
                     <div>
                         <h4 class="fw-bold mb-1">Notificaciones</h4>
                         <p class="text-muted small mb-0">Aquí puedes ver todas tus notificaciones recientes.</p>
                     </div>
-                    <a href="#" class="text-decoration-none fw-bold" style="color: var(--azul-primario); font-size: 0.85rem;">Marcar todas como leídas</a>
+                    <a id="notiMarcarLeidas" href="#" class="text-decoration-none fw-bold" style="color: var(--azul-primario); font-size: 0.85rem;">Marcar todas como leídas</a>
                 </div>
 
                 <!-- Ítem 1: Nueva vacante recomendada (Estado: Sin leer) -->
@@ -194,14 +194,14 @@
         <!-- COLUMNA DERECHA: Perfil Resumen -->
         <aside class="col-lg-3 col-xl-3 mb-4">
             <div class="card tarjeta-personalizada p-4 text-center mb-4">
-                <div class="imagen-perfil mb-3 d-flex align-items-center justify-content-center">
+                <div id="notiFoto" class="imagen-perfil mb-3 d-flex align-items-center justify-content-center">
                     <i class="bi bi-person-fill text-white" style="font-size: 3rem;"></i>
                 </div>
-                <h5 class="fw-bold mb-0">Usuario</h5>
-                <p class="text-muted small mb-0 fw-bold mt-1">Desarrollo de Software</p>
-                <p class="text-muted small mb-2">Segundo año</p>
+                <h5 id="notiNombre" class="fw-bold mb-0">Usuario</h5>
+                <p id="notiEspecialidad" class="text-muted small mb-0 fw-bold mt-1">Desarrollo de Software</p>
+                <p id="notiAnio" class="text-muted small mb-2">Segundo año</p>
                 <div class="mb-3">
-                    <span class="punto-estado"></span><span class="fw-bold" style="color: #10b981; font-size: 0.8rem;">Disponible para oportunidades</span>
+                    <span class="punto-estado"></span><span id="notiDisponibilidad" class="fw-bold" style="color: #10b981; font-size: 0.8rem;">Disponible para oportunidades</span>
                 </div>
                 <a href="./perfilEstudiante.html" class="btn btn-primary w-100 rounded-pill" style="background-color: var(--azul-primario); border:none; padding: 8px; font-weight: 600;"> Ver mi perfil</a>
             </div>
@@ -307,5 +307,7 @@
 <!-- Script oficial de Bootstrap para funcionalidades de Modals y Navbar colapsable -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+<script src="../JS/EstudiantesJS/notificaciones.js"></script>
+<script src="../JS/global.js"></script>
 </body>
 </html>
