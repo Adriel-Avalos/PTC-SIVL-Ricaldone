@@ -28,7 +28,7 @@
                     <li class="nav-item">
                         <a class="nav-link px-3 rounded-5 fw-medium" href="./notificacionesEmpresa.html">
                             <i class="bi bi-bell me-1"></i> Notificaciones 
-                            <span class="badge bg-danger ms-1 rounded-pill" style="font-size: 0.7rem; padding: 3px 6px;">5</span>
+                            <span id="empresaNotificaciones" class="badge bg-danger ms-1 rounded-pill" style="font-size: 0.7rem; padding: 3px 6px;">5</span>
                         </a>
                     </li>
                 </ul>
@@ -41,12 +41,12 @@
             
             <div class="col-xl-2 col-lg-3">
                 <div class="card border-0 rounded-4 p-4 text-center bg-white shadow-sm">
-                    <div class="rounded-circle bg-secondary-subtle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 75px; height: 75px;">
+                    <div id="empresaFotoPerfil" class="rounded-circle bg-secondary-subtle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 75px; height: 75px;">
                         <i class="bi bi-building text-white fs-2"></i>
                     </div>
-                    <h5 class="fw-bold mb-0" style="font-size: 1.05rem;">Empresa</h5>
-                    <p class="text-muted small mb-3">TechSolutions S.A.</p>
-                    <a href="#" class="btn btn-primary w-100 rounded-pill py-2 fw-semibold border-0" style="background-color: var(--azul-primario); font-size: 0.85rem;">Ver mi perfil</a>
+                    <h5 id="empresaTipo" class="fw-bold mb-0" style="font-size: 1.05rem;">Empresa</h5>
+                    <p id="empresaNombre" class="text-muted small mb-3">TechSolutions S.A.</p>
+                    <a id="empresaVerPerfil" href="#" class="btn btn-primary w-100 rounded-pill py-2 fw-semibold border-0" style="background-color: var(--azul-primario); font-size: 0.85rem;">Ver mi perfil</a>
                 </div>
             </div>
 
@@ -60,25 +60,25 @@
                     <div class="col-xl-3 col-md-6">
                         <div class="card border-0 rounded-4 p-3 bg-white shadow-sm d-flex flex-row align-items-center gap-3">
                             <div class="rounded-3 d-flex align-items-center justify-content-center fs-4 flex-shrink-0" style="width: 48px; height: 48px; background: #e8f0fe; color: var(--azul-primario);"><i class="bi bi-backpack-fill"></i></div>
-                            <div><div class="fw-bold fs-4 lh-1">18</div><div class="text-muted small">Pasantes activos</div></div>
+                            <div><div id="contadorPasantesActivos" class="fw-bold fs-4 lh-1">18</div><div class="text-muted small">Pasantes activos</div></div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="card border-0 rounded-4 p-3 bg-white shadow-sm d-flex flex-row align-items-center gap-3">
                             <div class="rounded-3 d-flex align-items-center justify-content-center fs-4 flex-shrink-0" style="width: 48px; height: 48px; background: #e6f7ed; color: #10b981;"><i class="bi bi-clock-history"></i></div>
-                            <div><div class="fw-bold fs-4 lh-1">2,450</div><div class="text-muted small">Horas acumuladas</div></div>
+                            <div><div id="contadorHorasAcumuladas" class="fw-bold fs-4 lh-1">2,450</div><div class="text-muted small">Horas acumuladas</div></div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="card border-0 rounded-4 p-3 bg-white shadow-sm d-flex flex-row align-items-center gap-3">
                             <div class="rounded-3 d-flex align-items-center justify-content-center fs-4 flex-shrink-0" style="width: 48px; height: 48px; background: #f3e8ff; color: #a855f7;"><i class="bi bi-calendar-check-fill"></i></div>
-                            <div><div class="fw-bold fs-4 lh-1">245</div><div class="text-muted small">Horas este mes</div></div>
+                            <div><div id="contadorHorasMes" class="fw-bold fs-4 lh-1">245</div><div class="text-muted small">Horas este mes</div></div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="card border-0 rounded-4 p-3 bg-white shadow-sm d-flex flex-row align-items-center gap-3">
                             <div class="rounded-3 d-flex align-items-center justify-content-center fs-4 flex-shrink-0" style="width: 48px; height: 48px; background: #fef3c7; color: #f59e0b;"><i class="bi bi-hourglass-split"></i></div>
-                            <div><div class="fw-bold fs-4 lh-1">6</div><div class="text-muted small">Por finalizar</div></div>
+                            <div><div id="contadorPorFinalizar" class="fw-bold fs-4 lh-1">6</div><div class="text-muted small">Por finalizar</div></div>
                         </div>
                     </div>
                 </div>
@@ -88,13 +88,13 @@
                         <div class="card border-0 rounded-4 shadow-sm bg-white overflow-hidden">
                             <div class="d-flex justify-content-between align-items-center px-4 border-bottom">
                                 <div class="d-flex gap-2">
-                                    <button class="btn btn-filtro-pasante activo py-3 px-2 border-0 bg-transparent fw-bold">Todos</button>
-                                    <button class="btn btn-filtro-pasante py-3 px-2 border-0 bg-transparent fw-bold">Activos</button>
-                                    <button class="btn btn-filtro-pasante py-3 px-2 border-0 bg-transparent fw-bold">Finalizados</button>
+                                    <button id="btnFiltroTodos" class="btn btn-filtro-pasante activo py-3 px-2 border-0 bg-transparent fw-bold">Todos</button>
+                                    <button id="btnFiltroActivos" class="btn btn-filtro-pasante py-3 px-2 border-0 bg-transparent fw-bold">Activos</button>
+                                    <button id="btnFiltroFinalizados" class="btn btn-filtro-pasante py-3 px-2 border-0 bg-transparent fw-bold">Finalizados</button>
                                 </div>
                                 <div class="position-relative">
                                     <i class="bi bi-search position-absolute text-muted" style="left: 12px; top: 50%; transform: translateY(-50%);"></i>
-                                    <input type="text" class="form-control rounded-pill ps-5 bg-light border-0 small" style="width: 200px; font-size: 0.8rem;" placeholder="Buscar pasante...">
+                                    <input id="inputBuscarPasante" type="text" class="form-control rounded-pill ps-5 bg-light border-0 small" style="width: 200px; font-size: 0.8rem;" placeholder="Buscar pasante...">
                                 </div>
                             </div>
 
@@ -107,7 +107,7 @@
                                         <th class="border-0 text-center">Estado</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="contenedorPasantes">
                                     <tr>
                                         <td class="px-4">
                                             <div class="d-flex align-items-center gap-3">
@@ -256,5 +256,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+     <script src="../JS/EmpresaJS/pasantesYhorasLaborales.js"></script>
+
 </body>
 </html>
